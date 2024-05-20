@@ -6,7 +6,7 @@ This project leverages the [DogAPI](https://dog.ceo/dog-api/) to fetch for a ran
 ## Samples
 ### Random image generation
 ![Corgi on couch](https://github.com/secretmtgdev/DogApi/blob/main/src/images/markdown/corgi.png)
-![German Shepherd in grass](https://github.com/secretmtgdev/DogApi/blob/main/src/images/markdown/german_shepherd.jpg)
+![German Shepherd in grass](https://github.com/secretmtgdev/DogApi/blob/main/src/images/markdown/german_shepherd.png)
 
 ### List of all dog breeds
 ![Dog breeds listed](https://github.com/secretmtgdev/DogApi/blob/main/src/images/markdown/all_breeds.png)
