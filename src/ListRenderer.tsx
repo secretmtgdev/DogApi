@@ -8,14 +8,14 @@ interface ListRendererProps {
 
 export function NestedListRenderer({listContent}: ListRendererProps) {
     const listToRender: React.JSX.Element[] = [];
-    console.error(listContent);
     const getRenderList = (renderList: NestedArrayEl[]) => {
         for (const content of renderList) {
             if (Array.isArray(content) && content.length) {
-                console.error('RENDERING NEW LIST');
-                listToRender.push(<ul>{content.map((el: string) => <li>{el}</li>)}</ul>);
+                /* eslint-disable-next-line no-restricted-globals */
+                listToRender.push(<ul key={self.crypto.randomUUID()}>{content.map((el: string) => <li key={self.crypto.randomUUID()}>{el}</li>)}</ul>);
             } else {
-                listToRender.push(<li>{(content as string)}</li>);
+                /* eslint-disable-next-line no-restricted-globals */
+                listToRender.push(<li key={self.crypto.randomUUID()}>{(content as string)}</li>);
             }
         }
     }

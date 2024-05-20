@@ -8,6 +8,6 @@ export function AllDogsRenderer() {
     const [allDogs, setAllDogs] = useState([] as NestedArrayEl[]);
     useEffect(() => {
         GetAllDogs().then((dogList: NestedArrayEl[]) => setAllDogs(dogList));
-    })
+    }, []);
     return <NestedListRenderer listContent={allDogs} />
 }
